@@ -324,6 +324,9 @@ footer {
   height: 1px;
   background-color: #84c1ff;
 }
+.reflection{
+  transform: scale(-1,1);
+}
 
 .we {
   margin-left: 5vw;
@@ -332,7 +335,9 @@ footer {
 .calc {
   position: relative;
 }
-
+.showAtThird{
+  display: none;
+}
 ._anim-items {
   opacity: 0;
   -webkit-transform: translateY(120px);
@@ -350,5 +355,16 @@ footer {
 @media (max-width: 769px) {
   .row-minTop {
     margin: 0;
+  }
+}
+@media (max-width: 486px){
+  .hideAtThird{
+    display: none;
+  }
+  .showAtThird{
+    display: block;
+  }
+  .calc-priceN{
+    font-size: 24px;
   }
 }
